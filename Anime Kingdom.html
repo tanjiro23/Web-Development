@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--I have used the Bootstrap Framework for this project.-->
+<!--I have used Internal CSS method, because initially, in the assignment, it
+  was mentioned that only one file .html will be submitted, hence have a reliable internet connection -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="Anime Content" content="Anime">
+  <meta name="keywords" content="Anime, Kingdom">
+  <meta name="author" content="Ayush Gupta">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <style>
+      body{
+             width:100%;
+             height:100%;
+             margin:0;
+             font-family: Times New Roman;
+             font-size: 24px;
+             background-color: #f1f9f7;
+          }
+          #box{
+              border: 1px solid black;
+          }
+          .list{
+              background-color: #9afffb;
+          }
+          video{
+              float:right;
+              overflow: hidden;
+          }
+          footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #000;
+            color: white;
+            text-align: center;
+            font-size:15px;
+            font-family: serif;
+}
+   </style>  
+<title> Anime Kingdom </title>
+</head>
+<body>
+      <!-- I refered to this website for navigation bar "https://www.w3schools.com/bootstrap/bootstrap_navbar.asp" -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+              <span class="icon bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+           </button>
+           <a href="# " class="navbar-brand">
+           <span class="glyphicon glyphicon-text-background"></span>
+               nime Kingdom
+               </a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="# "><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+              <li><a href="# "><span class="glyphicon glyphicon-log-in"></span> Login </a>
+            </ul>
+          </div>
+         </div>
+      </nav>    
+      <br><br>
+       <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4">
+                     <div class="panel panel-primary" >
+                         <div class="panel-heading"><center> Already a member, Login </center></div>
+                     <div class="panel-body"> 
+                     <form>
+                        <div class="form-group">
+                            <label for="username">Username </label>
+                            <input type="text" class="form-control" name="username" placeholder="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password </label>
+                            <input type="password" class="form-control" name="password" placeholder="password">
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="gender" value="male">Male
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="female">Female
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="other">Other
+                            </label>
+                        </div>
+                          <div class="form-group">
+                              <center><button class="btn btn-primary" type="button">Login</button></center>
+                          </div>
+                    </form>
+                     </div>
+                     </div>
+                 </div>
+                <div class="col-xs-8">
+                <!-- embedding image -->
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1b48b6af-8609-46ca-8cee-727b2bb0d644/d9i8i6n-ddf3f528-3de7-4f42-a68f-a41cc9844206.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMWI0OGI2YWYtODYwOS00NmNhLThjZWUtNzI3YjJiYjBkNjQ0XC9kOWk4aTZuLWRkZjNmNTI4LTNkZTctNGY0Mi1hNjhmLWE0MWNjOTg0NDIwNi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.1kqx5IT5u-ztTNyYFsdoxuHwhyHh7Zi0haioYNpi-_4" height="350px" width="900px" class="img-responsive">               
+            </div>
+            </div>
+            </div>
+        <br>
+      <div class="container-fluid">
+        <div class="col-xs-4">
+         <div class="panel-group">
+        <div class="panel panel-success">
+           <div class="panel-heading"> Top Tier Anime</div>
+           <div class="panel-body list">
+               <ol type='I'><em>
+                       <li> Code Geass
+               <li> Attack on Titan
+               <li> Re: Zero
+               </ol></em>
+           </div>
+        </div>
+        <div class="panel panel-primary">
+           <div class="panel-heading"> Most popular anime </div>
+           <div class="panel-body list"> 
+             <ul type='circle'>
+               <li> Death Note
+               <li> Dragon Ball Z
+               <li> Naruto 
+             </ul>
+            </div>
+         </div>
+        </div>
+       </div>
+          <div class="col-xs-8" style="float:right">
+              <!--Embedding Video-->
+              <video class="video-responsive" id="video" height="410px" width="782px"controls><source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4"></video>
+          </div>
+       </div>  
+        <br>
+        <div class="container">
+            <div class="col-xs-7">
+            <div class="table-responsive">
+                <table class="table table-hover table-striped table-bordered">
+                      <thead>
+                         <tr> 
+                         <th> Best Girl Rank</th>
+                         <th>Name</th>
+                         <th>Anime</th>
+                         <th>Hair Color</th>
+                         </tr>
+                      </thead>
+                      <tbody>
+                       <tr>
+                        <th>1</th>
+                        <td>Rem</td>
+                        <td>Re: Zero</td>
+                        <td><font color="blue">Blue</font> </td>
+                        </tr>
+                         <tr>
+                         <th>2</th>
+                        <td>Kurisu Makise</td>
+                         <td>Steins Gate</td>
+                         <td><font color="red">Red</font></td>
+                         </tr>
+                         <tr>
+                         <th>3</th>
+                            <td>C2</td>
+                            <td>Code Geass</td>
+                            <td><font color="green">Green</font></td>
+                        </tr>
+                      </tbody>
+               </table>
+            </div>
+            </div>
+            <div class="col-xs-5" id="box">
+                <center> <h1><strong style="font-family: serif;">Embedded Audio</strong></h1>
+        <audio controls>
+  <source src="https://www.computerhope.com/jargon/m/example.mp3" type="audio/mpeg">
+        </audio></center>
+            </div>
+        </div>
+        <footer class="page-footer">Please have a reliable internet connection. I have linked Bootstrap, audio and video through
+        online links, because, initially, it was given that we had to submit one .html file.</footer>
+</body>
+</html>
